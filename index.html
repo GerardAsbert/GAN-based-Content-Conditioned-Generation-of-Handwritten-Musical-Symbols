@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My Paper</title>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAN-based Content-Conditioned Generation of Handwritten Musical Symbols</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.2em;
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .authors {
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 1em;
+    }
+
+    .affiliations {
+      font-size: 0.95em;
+      color: #777;
+      margin-bottom: 2em;
+    }
+
+    .abstract {
+      background-color: #f0f0f0;
+      padding: 15px 20px;
+      border-left: 4px solid #007acc;
+      margin-bottom: 1.5em;
+    }
+
+    .keywords {
+      font-style: italic;
+      margin-bottom: 2em;
+      color: #555;
+    }
+
+    a.button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #007acc;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #999;
+      margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
     <h1>GAN-based Content-Conditioned Generation of Handwritten Musical Symbols</h1>
-    <p><a href="Paper_GAN_ICDAR_2025.pdf">Download the paper (PDF)</a></p>
-  </body>
+
+    <div class="authors">
+      Gerard Asbert<sup>1</sup>, Pau Torras<sup>1,2</sup>, Lei Kang<sup>1,2</sup>, Alicia Fornés<sup>1,2</sup>, Josep Lladós<sup>1,2</sup>
+    </div>
+
+    <div class="affiliations">
+      <sup>1</sup>Computer Vision Center, Barcelona, Spain<br>
+      <sup>2</sup>Department of Computer Science, Universitat Autònoma de Barcelona, Spain
+    </div>
+
+    <div class="abstract">
+      <strong>Abstract:</strong> The field of Optical Music Recognition (OMR) is currently hindered by the scarcity of real annotated data, particularly when dealing with handwritten historical musical scores. In similar fields, such as Handwritten Text Recognition, it was proven that synthetic examples produced with image generation techniques could help to train better-performing recognition architectures. This study explores the generation of realistic, handwritten-looking scores by implementing a music symbol-level Generative Adversarial Network (GAN) and assembling its output into a full score using the Smashcima engraving software. We have systematically evaluated the visual fidelity of these generated samples, concluding that the generated symbols exhibit a high degree of realism, marking significant progress in synthetic score generation.
+    </div>
+
+    <div class="keywords">
+      <strong>Keywords:</strong> Generative Adversarial Networks, Handwritten Musical Symbols, Content Conditioning, Musical Score Generation
+    </div>
+
+    <p>
+      <a href="Paper_GAN_ICDAR_2025.pdf" class="button">Download the Paper (PDF)</a>
+    </p>
+  </div>
+
+  <footer>
+    © 2025 Gerard Asbert et al. | <a href="https://github.com/GerardAsbert/CVC_OMR-GAN" target="_blank">Code on GitHub</a>
+  </footer>
+</body>
 </html>
+
